@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall background */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    transition: background 1s ease;
+}
+
+/* Weather App Container */
+.app {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Title */
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Input and Button styling */
+input, button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Input field style */
+input {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+button {
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Weather Data Section */
+#weatherData {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Dynamic Background Images (for weather states) */
+.sunny {
+    background-image: url('images/sunny.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cloudy {
+    background-image: url('images/cloudy.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.rainy {
+    background-image: url('images/rainy.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.snowy {
+    background-image: url('images/snowy.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.clear {
+    background-image: url('images/clear.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Smooth transitions */
+.app {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+button {
+    transition: transform 0.3s ease;
+}
+
+/* For button hover */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Add slight animation to weather data */
+#weatherData p {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
