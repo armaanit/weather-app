@@ -49,6 +49,8 @@ function setBackground(weather) {
     document.body.classList.add("rainy");
   } else if (weather.includes("snow")) {
     document.body.classList.add("snowy");
+  } else if (weather.includes("mist")) {
+    document.body.classList.add("mist");
   } else {
     document.body.classList.add("sunny");
   }

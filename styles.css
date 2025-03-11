@@ -102,6 +102,12 @@ button:hover {
     background-position: center;
 }
 
+.mist {
+    background-image: url('images/mist.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
 /* Smooth transitions */
 .app {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
